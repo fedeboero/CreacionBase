@@ -1,0 +1,39 @@
+CREATE DATABASE Seguro;
+
+CREATE TABLE Siniestros(
+  IDSinietro int,
+  FechaSiniestro date,
+  HoraSiniestro time, 
+  EstadoSiniestro varchar(2),
+  NumeroPoliza varchar(20),
+  PolizaTercero varchar(20),
+  NombreAnalista varchar(50),
+  NumeroDenuncia varchar(50),
+  );
+ CREATE TABLE Asegurado(
+  NumeroPoliza varchas(20),
+  DNIAsegurado int,
+  NombreAsegurado varchar(50), 
+  DireccionAsegurado varchar(50),
+  CoberturaPoliza varchar(20),
+  );
+ CREATE TABLE Denuncia(
+  NumeroDenuncia varchar(20),
+  FechaDenuncia date,
+  HoraDenuncia time,
+  Denunciante varchar(20),
+  );
+ CREATE TABLE Analista(
+  NombreAnalista varchar(50),
+  EstadoAnalista varchar(2),
+  CorreoAnalista varchar(50),
+ CREATE TABLE Tercero(
+  PolizaTercero varchar(20),
+  DniTercero int,
+  NombreTercero varchar(50),
+  AseguradoraTercero varchar(50),
+  CoberturaTercero varchar(50),
+  DireccionTercero varchar(50),
+  TelefonoTercero varchar(20),
+  );
+  
